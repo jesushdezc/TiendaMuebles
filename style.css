@@ -288,3 +288,153 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
+
+.blog-1 {
+    flex-basis: calc(33.3%, 30px);
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-txt {
+    padding: 40px;
+}
+
+.btn-4 {
+    display: inline-block;
+    border: 1px solid #181818;
+    padding: 8px, 25px;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #181818;
+}
+
+/** FOOTER **/
+
+.footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 17px;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.link a {
+    font-size: 17px;
+    color: #181818;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link:hover {
+    color: #ff3c2a;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ff9000;
+        display: none;
+    }
+
+    .menu ,.navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #ffffff;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 100px 30px 50px 30px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt {
+        margin-bottom: 25px;
+    }
+
+    .oferts {
+        padding: 30px;
+    }
+
+    .oferts-content {
+        flex-direction: column;
+    }
+
+    .ofert-1 {
+        margin-bottom: 30px;
+    }
+
+    .logan-1 {
+        order: -2;
+        margin-bottom: 30px;
+    }
+
+    .promotion {
+        padding: 30px;
+    }
+
+    .promotion-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promotion-txt {
+        margin-bottom: 25px;
+    }
+
+    .promotion-img {
+        width: 200px;
+    }
+
+    .product {
+        padding: 30px;
+    }
+
+    .product-content {
+        grid-template-columns: (1, 1fr);
+        gap: 0;
+    }
+
+    .blog {
+        padding: 30px;
+    }
+
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
